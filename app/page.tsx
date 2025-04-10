@@ -3,9 +3,12 @@ import React, { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import TypeWriter from "./components/TypeWriter";
-import { useTheme } from 'next-themes';
+
+
+
 
 export default function Home() {
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const skills = ["JavaScript", "React", "Node.js", "TypeScript", "Next.js", "Tailwind CSS"];
   
