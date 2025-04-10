@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import TypeWriter from "./components/TypeWriter";
+import SkillsPreview from "./components/Skills";
 
 
 
@@ -252,19 +253,7 @@ export default function Home() {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="my-20 px-4 max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6">Skills</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
-            {skills.map((skill) => (
-              <div 
-                key={skill}
-                className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-200 dark:hover:bg-gray-700 transition cursor-default shadow-md"
-              >
-                {skill}
-              </div>
-            ))}
-          </div>
-        </section>
+        <SkillsPreview />
 
         {/* Testimonials Section */}
         <section className="my-20 px-4">
